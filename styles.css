@@ -1,0 +1,133 @@
+html{
+  width:288px;
+  min-height: 460px;
+  max-width: 300px;
+}
+
+body{
+  margin:0;
+  color:#323033;
+  font-size: 16px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+#logo{
+  position: relative;
+  top:14px;
+  left:-8px;
+}
+
+#version{
+  color:#1E4363;
+  font-size: 12.5px;
+  padding-top: 2px;
+  padding-left: 2.5px;
+}
+
+h3{
+  margin-top: 8px;
+  margin-bottom: 18px;
+  padding-left: 8px;
+  text-align: center;
+  font-family: "lato","sans-serif";
+  font-weight: 390;
+  font-size: 20px;
+  color: #BC2D19;
+}
+
+.container{
+  margin:0 10px;
+}
+
+.notes{
+  display:none;
+  border-top: 1px solid #1E4363;
+  border-bottom: 1px solid #1E4363;
+  font-family: "Roboto","sans-serif";
+}
+
+ul{
+  padding:0;
+  margin:4px;
+  /* issue to be fixed 
+  overflow-y: scroll; */
+}
+
+
+li{
+  list-style:none;
+  background-image: url("/images/list_style.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 28px;
+  padding-bottom: 6px;
+  padding-top: 5px;
+  margin:7px 0;
+  color: #1E4363;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+li:hover{
+  /* background-color: #eee4be; */
+  background-color: #edf0f4;
+  color:#0e2941 ;
+}
+
+input{
+  border:1px solid #BC2D19;
+  color:#1E4363;
+  /* font-family: "Roboto","sans-serif"; will be redundant! */
+  border-radius: 17px;
+  font-size: 14px;
+  padding: 3px 7px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: auto;
+}
+/* to remove the annoying focus borders */
+.rem-btn:focus,input:focus,.button:focus{
+  outline-width: 0;
+}
+
+.button, .button:focus{
+  display: inline-block;
+  width: 70px;
+  font-size: 13px;
+  border-radius: 10px;
+  padding:4px;
+  margin-top: 6px;
+  background-color: #FFCB05;
+  box-shadow: 1.7px 1.5px #F23C50;
+  border: 1.5px solid #1E4363;
+  font-weight: 500;
+  color:#BC2D19;
+  transition: 0.07s;
+}
+
+.button:hover{
+  background-color: #FFCB05;
+  box-shadow: 1.7px 1.5px #FF8926;
+  border: 1.5px solid #1c5687;
+  color:#B82916;
+  font-weight: 600;
+}
+
+.rem-btn{  
+  width:20%;
+  float: right;
+  border: none;
+  background: inherit;
+  background-image: none;
+  font-weight: 500;
+  color:#1E4363;
+}
+
+.rem-btn:hover{
+  background-color: #edf0f4;
+  font-weight: 900;
+  font-size: 14px;
+  color: #BC2D19;
+}
